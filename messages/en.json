@@ -1,0 +1,164 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Tobias Marroquin",
+    "title": "Frontend Engineer",
+    "subtitle": "Building pixel-perfect interfaces and high-performance mobile apps with React & React Native.",
+    "cta_contact": "Get in touch",
+    "cta_cv": "Download CV",
+    "available": "Available for new opportunities"
+  },
+  "about": {
+    "label": "About me",
+    "title": "Passionate about great user experiences",
+    "bio": "I'm a frontend developer with 4 years of experience working with React JS and React Native. I enjoy building apps that are not only functional but also provide a great user experience. Throughout my career, I've been involved in different kinds of projects, from early ideas to fully released products. I'm always looking to improve the way I write code, learn new tools, and care about writing clean, maintainable code.",
+    "ai_title": "AI-augmented development",
+    "ai_bio": "I actively integrate AI tools like Claude Code and Cursor into my daily workflow — from code reviews and architecture decisions to complex debugging sessions. This lets me ship faster without sacrificing quality, and stay ahead in a rapidly evolving industry."
+  },
+  "experience": {
+    "label": "Work experience",
+    "title": "Where I've worked",
+    "present": "Present",
+    "jobs": [
+      {
+        "company": "AI Innovation Lab / Product Development Cell",
+        "role": "Frontend Engineer",
+        "period": "Feb 2026 – Present",
+        "bullets": [
+          "Sole Frontend Developer in a multidisciplinary AI Pod — collaborated with PMs, UX/UI designers, and backend engineers to build a high-performance MVP from scratch.",
+          "Engineered a modern responsive web architecture using React and Vite, prioritizing speed and seamless UX.",
+          "Integrated advanced Generative AI capabilities leveraging Gemini and Claude APIs to power core product features and automated workflows.",
+          "Translated UI/UX prototypes into functional, maintainable code within an agile, fast-paced cycle."
+        ],
+        "tags": ["React", "Vite", "Claude API", "Gemini API", "TypeScript"]
+      },
+      {
+        "company": "Globant",
+        "role": "Frontend Developer",
+        "period": "Oct 2024 – Present",
+        "bullets": [
+          "Developed and maintained cross-platform mobile applications using React Native and React JS, following clean architecture principles.",
+          "Built the La Anónima retail app: pixel-perfect React Native UI from Figma designs, Redux + GraphQL state management, Zod schema validation, and complex nested navigation.",
+          "Collaborated with cross-functional teams including designers, backend developers, and QA to deliver high-quality features.",
+          "Implemented SOLID principles and AI-augmented code audits for consistent architecture adherence."
+        ],
+        "tags": ["React Native", "TypeScript", "Redux", "GraphQL", "Expo", "Zod"]
+      },
+      {
+        "company": "GlobalLogic",
+        "role": "Frontend Developer",
+        "period": "Nov 2023 – Nov 2024",
+        "bullets": [
+          "Mobile application development with React Native Expo.",
+          "Collaboration with UX/UI designers and backend engineers to define technical solutions.",
+          "Contribution to code reviews, ensuring high coding standards and best practices.",
+          "Working with Scrum methodology for project management."
+        ],
+        "tags": ["React Native", "Expo", "TypeScript", "Scrum"]
+      },
+      {
+        "company": "Global Wizards",
+        "role": "Frontend Developer",
+        "period": "Sep 2022 – Oct 2023",
+        "bullets": [
+          "Mobile application development with React Native for interactive interfaces optimized for mobile devices.",
+          "Integration with Firebase to improve app functionality and ensure user security.",
+          "Maintenance and troubleshooting to ensure optimal performance and smooth UX.",
+          "Team collaboration for planning, code reviews, and architecture improvements."
+        ],
+        "tags": ["React Native", "Firebase", "JavaScript"]
+      },
+      {
+        "company": "AiMonkey",
+        "role": "React Native Developer",
+        "period": "Jan 2021 – Sep 2022",
+        "bullets": [
+          "Integrated new functionalities into the Regatta Fitness app (10k+ downloads) — both server side (Node.js) and frontend (React Native, React JS).",
+          "Provided ongoing maintenance for apps built in JavaScript and TypeScript.",
+          "Implemented social media features using the Get Social library."
+        ],
+        "tags": ["React Native", "React JS", "Node.js", "TypeScript"]
+      },
+      {
+        "company": "Martin Produce Inc.",
+        "role": "Mobile App Developer (Freelance)",
+        "period": "Nov 2020",
+        "bullets": [
+          "Developed a mobile e-commerce app for Android and iOS for a major US food distributor.",
+          "Full-stack implementation including REST API and mobile client."
+        ],
+        "tags": ["React Native", "Node.js", "Express", "MongoDB"]
+      }
+    ]
+  },
+  "projects": {
+    "label": "Projects",
+    "title": "Things I've built",
+    "view_code": "View code",
+    "featured": "Featured",
+    "work_project": "Work project",
+    "anonima_description": "React Native retail app for Argentina's major supermarket chain, built at Globant. Pixel-perfect Figma-to-code implementation with complex nested navigation (Drawer + Tab + Stack), Redux + GraphQL state management, Zod schema validation, and a loyalty program integration.",
+    "items": [
+      {
+        "name": "Snap — URL Shortener",
+        "description": "Full-stack URL shortener with analytics dashboard. Users create short aliases and track click statistics (clicks per day, peak hours, weekly trends). Features JWT auth, 70 integration tests, and Playwright E2E tests.",
+        "tags": ["TypeScript", "Node.js", "Express", "SQLite", "React", "Vitest", "Playwright"],
+        "repo": "https://github.com/toba456/snap-url-shortener",
+        "featured": true
+      },
+      {
+        "name": "Calorie Tracker",
+        "description": "Calorie counter built with React and Vite. Uses useReducer for state management, TypeScript for type safety, and Tailwind CSS for styling.",
+        "tags": ["React", "TypeScript", "Vite", "useReducer", "Tailwind CSS"],
+        "repo": "https://github.com/toba456/calorie-tracker",
+        "featured": false
+      },
+      {
+        "name": "Tip Calculator",
+        "description": "Web tip calculator with real-time split calculations. Built with React, TypeScript, and Tailwind CSS.",
+        "tags": ["React", "TypeScript", "Tailwind CSS"],
+        "repo": "https://github.com/toba456/Calculator_Tip",
+        "featured": false
+      },
+      {
+        "name": "GuitarLA",
+        "description": "E-commerce shopping cart for guitar products. Implements cart logic, product listing, and persistent state.",
+        "tags": ["React", "Vite", "CSS"],
+        "repo": "https://github.com/toba456/GuitarLA",
+        "featured": false
+      },
+      {
+        "name": "5Tenedores",
+        "description": "Mobile restaurant discovery app built with React Native and Expo. Features Google Maps integration for finding nearby restaurants, image picker for user photos, location services, Firebase backend, and form validation with Formik and Yup.",
+        "tags": ["React Native", "Expo", "Firebase", "Google Maps", "Formik"],
+        "repo": "https://github.com/toba456/5Tenedores",
+        "featured": false
+      }
+    ]
+  },
+  "skills": {
+    "label": "Skills",
+    "title": "My tech stack",
+    "categories": {
+      "frontend": "Frontend",
+      "mobile": "Mobile",
+      "backend": "Backend & Tools",
+      "ai": "AI & Productivity"
+    }
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Let's work together",
+    "subtitle": "I'm open to new opportunities. Whether you have a question or just want to say hi — my inbox is always open.",
+    "email_btn": "Send an email",
+    "linkedin_btn": "LinkedIn profile",
+    "cv_btn": "Download CV"
+  }
+}

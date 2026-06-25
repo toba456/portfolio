@@ -1,0 +1,164 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "skills": "Skills",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Tobias Marroquin",
+    "title": "Frontend Engineer",
+    "subtitle": "Construyo interfaces pixel-perfect y aplicaciones móviles de alto rendimiento con React y React Native.",
+    "cta_contact": "Contactame",
+    "cta_cv": "Descargar CV",
+    "available": "Disponible para nuevas oportunidades"
+  },
+  "about": {
+    "label": "Sobre mí",
+    "title": "Apasionado por las grandes experiencias de usuario",
+    "bio": "Soy desarrollador frontend con 4 años de experiencia trabajando con React JS y React Native. Me gusta crear aplicaciones que no solo sean funcionales, sino que también ofrezcan una excelente experiencia de usuario. A lo largo de mi carrera he participado en diferentes tipos de proyectos, desde las primeras ideas hasta productos totalmente lanzados al mercado. Siempre busco mejorar mi forma de escribir código y aprender nuevas herramientas. Me preocupo por escribir código limpio y fácil de mantener.",
+    "ai_title": "Desarrollo potenciado por IA",
+    "ai_bio": "Integro activamente herramientas de IA como Claude Code y Cursor en mi flujo de trabajo diario — desde revisiones de código y decisiones de arquitectura hasta sesiones de debugging complejas. Esto me permite entregar más rápido sin sacrificar calidad, y mantenerme a la vanguardia en una industria que evoluciona constantemente."
+  },
+  "experience": {
+    "label": "Experiencia laboral",
+    "title": "Dónde trabajé",
+    "present": "Presente",
+    "jobs": [
+      {
+        "company": "AI Innovation Lab / Product Development Cell",
+        "role": "Frontend Engineer",
+        "period": "Feb 2026 – Presente",
+        "bullets": [
+          "Único desarrollador frontend en un equipo multidisciplinario de IA — colaboré con PMs, diseñadores UX/UI e ingenieros backend para construir un MVP de alto rendimiento desde cero.",
+          "Diseñé una arquitectura web moderna y responsiva con React y Vite, priorizando velocidad y experiencia de usuario.",
+          "Integré capacidades de IA generativa usando las APIs de Gemini y Claude para potenciar funcionalidades core y flujos de trabajo automatizados.",
+          "Traduje prototipos UX/UI en código funcional y mantenible dentro de un ciclo ágil y de ritmo acelerado."
+        ],
+        "tags": ["React", "Vite", "Claude API", "Gemini API", "TypeScript"]
+      },
+      {
+        "company": "Globant",
+        "role": "Frontend Developer",
+        "period": "Oct 2024 – Presente",
+        "bullets": [
+          "Desarrollo y mantenimiento de aplicaciones móviles multiplataforma con React Native y React JS, siguiendo principios de arquitectura limpia.",
+          "Construí la app retail de La Anónima: UI pixel-perfect en React Native desde diseños Figma, gestión de estado con Redux + GraphQL, validación con Zod y navegación anidada compleja.",
+          "Colaboración con equipos multifuncionales incluyendo diseñadores, desarrolladores backend y QA para entregar funcionalidades de alta calidad.",
+          "Implementé principios SOLID y auditorías de código potenciadas por IA para adherencia arquitectónica consistente."
+        ],
+        "tags": ["React Native", "TypeScript", "Redux", "GraphQL", "Expo", "Zod"]
+      },
+      {
+        "company": "GlobalLogic",
+        "role": "Frontend Developer",
+        "period": "Nov 2023 – Nov 2024",
+        "bullets": [
+          "Desarrollo de aplicaciones móviles con React Native Expo.",
+          "Colaboración con diseñadores UX/UI e ingenieros backend para definir soluciones técnicas.",
+          "Contribución a revisiones de código, asegurando altos estándares y buenas prácticas.",
+          "Metodología Scrum para gestión de proyectos."
+        ],
+        "tags": ["React Native", "Expo", "TypeScript", "Scrum"]
+      },
+      {
+        "company": "Global Wizards",
+        "role": "Frontend Developer",
+        "period": "Sep 2022 – Oct 2023",
+        "bullets": [
+          "Desarrollo de aplicaciones móviles con React Native para interfaces interactivas optimizadas para dispositivos móviles.",
+          "Integración con Firebase para mejorar la funcionalidad y la seguridad de los usuarios.",
+          "Mantenimiento y resolución de problemas para garantizar rendimiento óptimo y buena experiencia de usuario.",
+          "Colaboración en planificación, revisiones de código y mejoras de arquitectura."
+        ],
+        "tags": ["React Native", "Firebase", "JavaScript"]
+      },
+      {
+        "company": "AiMonkey",
+        "role": "React Native Developer",
+        "period": "Ene 2021 – Sep 2022",
+        "bullets": [
+          "Integración de nuevas funcionalidades en la app Regatta Fitness (más de 10.000 descargas) — tanto en el servidor (Node.js) como en el frontend (React Native, React JS).",
+          "Mantenimiento continuo de apps desarrolladas en JavaScript y TypeScript.",
+          "Implementación de redes sociales usando la librería Get Social."
+        ],
+        "tags": ["React Native", "React JS", "Node.js", "TypeScript"]
+      },
+      {
+        "company": "Martin Produce Inc.",
+        "role": "Mobile App Developer (Freelance)",
+        "period": "Nov 2020",
+        "bullets": [
+          "Desarrollo de una app móvil de e-commerce para Android e iOS para un importante distribuidor de alimentos en EE.UU.",
+          "Implementación fullstack incluyendo API REST y cliente móvil."
+        ],
+        "tags": ["React Native", "Node.js", "Express", "MongoDB"]
+      }
+    ]
+  },
+  "projects": {
+    "label": "Proyectos",
+    "title": "Lo que construí",
+    "view_code": "Ver código",
+    "featured": "Destacado",
+    "work_project": "Proyecto laboral",
+    "anonima_description": "App retail en React Native para la principal cadena de supermercados de Argentina, construida en Globant. Implementación pixel-perfect desde Figma con navegación anidada compleja (Drawer + Tab + Stack), gestión de estado con Redux + GraphQL, validación con Zod e integración del programa de fidelidad.",
+    "items": [
+      {
+        "name": "Snap — URL Shortener",
+        "description": "Acortador de URLs fullstack con dashboard de analíticas. Los usuarios crean alias cortos y visualizan estadísticas de clicks (por día, hora pico, tendencias semanales). Incluye autenticación JWT, 70 tests de integración y tests E2E con Playwright.",
+        "tags": ["TypeScript", "Node.js", "Express", "SQLite", "React", "Vitest", "Playwright"],
+        "repo": "https://github.com/toba456/snap-url-shortener",
+        "featured": true
+      },
+      {
+        "name": "Calorie Tracker",
+        "description": "Contador de calorías construido con React y Vite. Usa useReducer para la gestión del estado, TypeScript para el tipado y Tailwind CSS para los estilos.",
+        "tags": ["React", "TypeScript", "Vite", "useReducer", "Tailwind CSS"],
+        "repo": "https://github.com/toba456/calorie-tracker",
+        "featured": false
+      },
+      {
+        "name": "Calculadora de Propinas",
+        "description": "Calculadora web de propinas con cálculo en tiempo real. Construida con React, TypeScript y Tailwind CSS.",
+        "tags": ["React", "TypeScript", "Tailwind CSS"],
+        "repo": "https://github.com/toba456/Calculator_Tip",
+        "featured": false
+      },
+      {
+        "name": "GuitarLA",
+        "description": "Carrito de compras e-commerce para productos de guitarra. Implementa lógica de carrito, listado de productos y estado persistente.",
+        "tags": ["React", "Vite", "CSS"],
+        "repo": "https://github.com/toba456/GuitarLA",
+        "featured": false
+      },
+      {
+        "name": "5Tenedores",
+        "description": "App móvil de descubrimiento de restaurantes construida con React Native y Expo. Integración con Google Maps para encontrar restaurantes cercanos, selector de imágenes, servicios de ubicación, backend en Firebase y validación de formularios con Formik y Yup.",
+        "tags": ["React Native", "Expo", "Firebase", "Google Maps", "Formik"],
+        "repo": "https://github.com/toba456/5Tenedores",
+        "featured": false
+      }
+    ]
+  },
+  "skills": {
+    "label": "Skills",
+    "title": "Mi stack tecnológico",
+    "categories": {
+      "frontend": "Frontend",
+      "mobile": "Mobile",
+      "backend": "Backend y Herramientas",
+      "ai": "IA y Productividad"
+    }
+  },
+  "contact": {
+    "label": "Contacto",
+    "title": "Trabajemos juntos",
+    "subtitle": "Estoy abierto a nuevas oportunidades. Si tenés una pregunta o simplemente querés saludar — mi bandeja de entrada siempre está abierta.",
+    "email_btn": "Enviar un email",
+    "linkedin_btn": "Perfil de LinkedIn",
+    "cv_btn": "Descargar CV"
+  }
+}
