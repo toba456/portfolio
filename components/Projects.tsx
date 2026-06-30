@@ -8,6 +8,8 @@ type Project = {
   description: string;
   tags: string[];
   repo: string;
+  liveUrl?: string;
+  isWorkProject?: boolean;
   featured: boolean;
 };
 
@@ -19,7 +21,18 @@ function GitHubIcon() {
   );
 }
 
+function ExternalLinkIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+      <polyline points="15 3 21 3 21 9" />
+      <line x1="10" y1="14" x2="21" y2="3" />
+    </svg>
+  );
+}
+
 function ProjectCard({ project, index }: { project: Project; index: number }) {
+  const t = useTranslations("projects");
   return (
     <motion.div
       initial={{ opacity: 0, y: 24 }}
@@ -38,10 +51,26 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       <div className="flex items-start justify-between mb-3 relative z-10">
         <h3 className="font-semibold text-white text-lg">{project.name}</h3>
         <div className="flex items-center gap-2 flex-shrink-0 ml-4">
-          {project.featured && (
+          {project.isWorkProject && (
+            <span className="text-xs px-2.5 py-1 rounded-full bg-[#f97316]/20 border border-[#f97316]/30 text-[#fb923c] font-medium">
+              {t("work_project")}
+            </span>
+          )}
+          {project.featured && !project.isWorkProject && (
             <span className="text-xs px-2.5 py-1 rounded-full bg-[#f97316]/20 border border-[#f97316]/30 text-[#fb923c] font-medium">
               ★ Featured
             </span>
+          )}
+          {project.liveUrl && (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg text-neutral-500 hover:text-white hover:bg-white/[0.08] transition-all"
+              title="Ver sitio en vivo"
+            >
+              <ExternalLinkIcon />
+            </a>
           )}
           <a
             href={project.repo}
@@ -84,9 +113,20 @@ function WorkProjectCard() {
       <div className="absolute top-0 right-0 w-40 h-40 bg-[#f97316]/10 rounded-full blur-3xl pointer-events-none" />
       <div className="flex items-start justify-between mb-3 relative z-10">
         <h3 className="font-semibold text-white text-lg">La Anónima — Retail App</h3>
-        <span className="text-xs px-2.5 py-1 rounded-full bg-[#f97316]/20 border border-[#f97316]/30 text-[#fb923c] font-medium flex-shrink-0 ml-4">
-          {t("work_project")}
-        </span>
+        <div className="flex items-center gap-2 flex-shrink-0 ml-4">
+          <span className="text-xs px-2.5 py-1 rounded-full bg-[#f97316]/20 border border-[#f97316]/30 text-[#fb923c] font-medium">
+            {t("work_project")}
+          </span>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.mobilenik.laanonimaplus&hl=es_AR"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-lg text-neutral-500 hover:text-white hover:bg-white/[0.08] transition-all"
+            title="Ver en Google Play"
+          >
+            <ExternalLinkIcon />
+          </a>
+        </div>
       </div>
       <p className="text-sm text-neutral-400 leading-relaxed mb-5 relative z-10 flex-1">
         {t("anonima_description")}

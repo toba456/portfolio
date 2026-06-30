@@ -107,6 +107,15 @@
     "anonima_description": "React Native retail app for Argentina's major supermarket chain, built at Globant. Pixel-perfect Figma-to-code implementation with complex nested navigation (Drawer + Tab + Stack), Redux + GraphQL state management, Zod schema validation, and a loyalty program integration.",
     "items": [
       {
+        "name": "Ski Instructor Website",
+        "description": "Booking management platform for a ski instructor, with multilanguage support and responsive design. Clients can check availability on a calendar and submit booking requests; the admin panel lets the instructor confirm, manage, and track all reservations through a dedicated user. Backend powered by Supabase.",
+        "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase", "i18n"],
+        "repo": "https://github.com/toba456/florencia-ski",
+        "liveUrl": "https://florencia-ski.vercel.app/es",
+        "isWorkProject": true,
+        "featured": true
+      },
+      {
         "name": "Snap — URL Shortener",
         "description": "Full-stack URL shortener with analytics dashboard. Users create short aliases and track click statistics (clicks per day, peak hours, weekly trends). Features JWT auth, 70 integration tests, and Playwright E2E tests.",
         "tags": ["TypeScript", "Node.js", "Express", "SQLite", "React", "Vitest", "Playwright"],
