@@ -107,6 +107,15 @@
     "anonima_description": "App retail en React Native para la principal cadena de supermercados de Argentina, construida en Globant. Implementación pixel-perfect desde Figma con navegación anidada compleja (Drawer + Tab + Stack), gestión de estado con Redux + GraphQL, validación con Zod e integración del programa de fidelidad.",
     "items": [
       {
+        "name": "OKDA — Productora Audiovisual",
+        "description": "Landing page institucional para OKDA, productora audiovisual argentina especializada en comunicación estratégica para empresas y marcas. Incluye secciones de hero animado, propuesta de valor, equipo, servicios, proceso, galería de videos y contacto. Deploy en Vercel con CI/CD automáticos.",
+        "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui", "Framer Motion"],
+        "repo": "https://github.com/toba456/okda-landing",
+        "liveUrl": "https://okda-landing.vercel.app/",
+        "isWorkProject": true,
+        "featured": true
+      },
+      {
         "name": "Web Instructora de Ski",
         "description": "Plataforma de gestión de reservas para una instructora de ski, con soporte multiidioma y diseño responsivo. Los clientes pueden ver disponibilidad en un calendario e iniciar reservas; el panel de administración permite al admin confirmar, gestionar y controlar todas las reservas desde un usuario dedicado. Backend en Supabase.",
         "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase", "i18n"],
