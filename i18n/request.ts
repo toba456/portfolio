@@ -1,13 +1,10 @@
 import { getRequestConfig } from "next-intl/server";
-import { cookies } from "next/headers";
 
+// Locale switching is disabled for now — English only. See messages/es.json
+// if it needs to come back.
 export default getRequestConfig(async () => {
-  const cookieStore = await cookies();
-  const locale = cookieStore.get("locale")?.value ?? "en";
-  const validLocale = ["en", "es"].includes(locale) ? locale : "en";
-
   return {
-    locale: validLocale,
-    messages: (await import(`../messages/${validLocale}.json`)).default,
+    locale: "en",
+    messages: (await import("../messages/en.json")).default,
   };
 });

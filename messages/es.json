@@ -7,20 +7,81 @@
     "contact": "Contacto"
   },
   "hero": {
-    "greeting": "Hola, soy",
-    "name": "Tobias Marroquin",
-    "title": "Frontend Engineer",
-    "subtitle": "Construyo interfaces pixel-perfect y aplicaciones móviles de alto rendimiento con React y React Native.",
-    "cta_contact": "Contactame",
-    "cta_cv": "Descargar CV",
-    "available": "Disponible para nuevas oportunidades"
+    "heading": "Hola, soy Tobias",
+    "tagline": "un frontend engineer enfocado en construir productos rápidos y pixel-perfect",
+    "contact_cta": "Contactame"
   },
   "about": {
-    "label": "Sobre mí",
-    "title": "Apasionado por las grandes experiencias de usuario",
-    "bio": "Soy desarrollador frontend con 4 años de experiencia trabajando con React JS y React Native. Me gusta crear aplicaciones que no solo sean funcionales, sino que también ofrezcan una excelente experiencia de usuario. A lo largo de mi carrera he participado en diferentes tipos de proyectos, desde las primeras ideas hasta productos totalmente lanzados al mercado. Siempre busco mejorar mi forma de escribir código y aprender nuevas herramientas. Me preocupo por escribir código limpio y fácil de mantener.",
-    "ai_title": "Desarrollo potenciado por IA",
-    "ai_bio": "Integro activamente herramientas de IA como Claude Code y Cursor en mi flujo de trabajo diario — desde revisiones de código y decisiones de arquitectura hasta sesiones de debugging complejas. Esto me permite entregar más rápido sin sacrificar calidad, y mantenerme a la vanguardia en una industria que evoluciona constantemente."
+    "title": "Sobre mí",
+    "text": "Con más de 4 años de experiencia en React y React Native, construyo productos rápidos y pixel-perfect de punta a punta, apoyándome todos los días en herramientas de IA como Claude Code para entregar más rápido sin bajar la calidad. Construyamos algo grande juntos."
+  },
+  "services": {
+    "title": "Servicios",
+    "items": [
+      {
+        "name": "Desarrollo Frontend",
+        "description": "Interfaces rápidas y accesibles con React, Next.js y TypeScript, desde el diseño hasta producción."
+      },
+      {
+        "name": "Apps Móviles",
+        "description": "Apps multiplataforma con React Native y Expo, publicadas en App Store y Google Play."
+      },
+      {
+        "name": "UI Pixel-Perfect",
+        "description": "Traducir diseños de Figma en código limpio, responsivo y listo para producción."
+      },
+      {
+        "name": "Integración de IA",
+        "description": "Integración de las APIs de Claude y Gemini, y flujos de trabajo potenciados por IA en el día a día."
+      },
+      {
+        "name": "Arquitectura y Calidad",
+        "description": "Código limpio, principios SOLID y buenas prácticas de testing para mantener el código sano a medida que crece."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "labels": {
+      "client": "Cliente",
+      "work": "Laboral",
+      "personal": "Personal",
+      "live": "Ver sitio",
+      "code": "Código",
+      "more_projects": "Más proyectos"
+    },
+    "items": {
+      "okda": {
+        "name": "OKDA — Productora Audiovisual",
+        "description": "Landing page institucional para OKDA, productora audiovisual argentina especializada en comunicación estratégica para empresas y marcas. Hero animado, propuesta de valor, equipo, servicios, proceso, galería de videos y contacto."
+      },
+      "florencia": {
+        "name": "Web Instructora de Ski",
+        "description": "Plataforma de gestión de reservas para una instructora de ski, con soporte multiidioma y diseño responsivo. Los clientes ven disponibilidad en un calendario y envían solicitudes; el panel de admin gestiona todas las reservas. Backend en Supabase."
+      },
+      "tenedores": {
+        "name": "5Tenedores",
+        "description": "App móvil de descubrimiento de restaurantes construida con React Native y Expo. Los usuarios exploran restaurantes con ubicación en Google Maps, dejan reseñas y calificaciones, y consultan un ranking; autenticación y datos persistidos en Firebase."
+      }
+    },
+    "more": {
+      "snap": {
+        "name": "Snap — URL Shortener",
+        "description": "Acortador de URLs fullstack con dashboard de analíticas, autenticación JWT, 70 tests de integración y tests E2E con Playwright."
+      },
+      "calorie_tracker": {
+        "name": "Calorie Tracker",
+        "description": "Contador de calorías construido con React y Vite, usando useReducer para la gestión del estado."
+      },
+      "tip_calculator": {
+        "name": "Calculadora de Propinas",
+        "description": "Calculadora web de propinas con cálculo en tiempo real."
+      },
+      "guitarla": {
+        "name": "GuitarLA",
+        "description": "Carrito de compras e-commerce para productos de guitarra con estado persistente."
+      }
+    }
   },
   "experience": {
     "label": "Experiencia laboral",
@@ -28,50 +89,38 @@
     "present": "Presente",
     "jobs": [
       {
-        "company": "AI Innovation Lab / Product Development Cell",
-        "role": "Frontend Engineer",
-        "period": "Feb 2026 – Presente",
-        "bullets": [
-          "Único desarrollador frontend en un equipo multidisciplinario de IA — colaboré con PMs, diseñadores UX/UI e ingenieros backend para construir un MVP de alto rendimiento desde cero.",
-          "Diseñé una arquitectura web moderna y responsiva con React y Vite, priorizando velocidad y experiencia de usuario.",
-          "Integré capacidades de IA generativa usando las APIs de Gemini y Claude para potenciar funcionalidades core y flujos de trabajo automatizados.",
-          "Traduje prototipos UX/UI en código funcional y mantenible dentro de un ciclo ágil y de ritmo acelerado."
-        ],
-        "tags": ["React", "Vite", "Claude API", "Gemini API", "TypeScript"]
-      },
-      {
         "company": "Globant",
         "role": "Frontend Developer",
-        "period": "Oct 2024 – Presente",
+        "period": "Oct 2024 – Jul 2026",
         "bullets": [
-          "Desarrollo y mantenimiento de aplicaciones móviles multiplataforma con React Native y React JS, siguiendo principios de arquitectura limpia.",
-          "Construí la app retail de La Anónima: UI pixel-perfect en React Native desde diseños Figma, gestión de estado con Redux + GraphQL, validación con Zod y navegación anidada compleja.",
-          "Colaboración con equipos multifuncionales incluyendo diseñadores, desarrolladores backend y QA para entregar funcionalidades de alta calidad.",
-          "Implementé principios SOLID y auditorías de código potenciadas por IA para adherencia arquitectónica consistente."
+          "Desarrollé funcionalidades móviles multiplataforma en React Native para La Anónima (importante cadena de supermercados argentina) y Farmacity (cadena de farmacias líder en Argentina), aplicando arquitectura limpia para mantener ambos códigos escalables.",
+          "Lideré daily stand-ups, sprint planning y revisiones de código junto a diseñadores, ingenieros backend y QA, detectando problemas de integración antes del release.",
+          "Estuve a cargo del frontend de una iniciativa interna de innovación en IA de punta a punta como único desarrollador frontend, construyendo un MVP en React + Vite e integrando las APIs de Gemini y Claude en funcionalidades core del producto.",
+          "Coordiné las publicaciones en App Store y Google Play junto al equipo mobile, preparando los builds para evitar demoras en los releases."
         ],
-        "tags": ["React Native", "TypeScript", "Redux", "GraphQL", "Expo", "Zod"]
+        "tags": ["React Native", "TypeScript", "React", "Vite", "Gemini API", "Claude API"]
       },
       {
         "company": "GlobalLogic",
         "role": "Frontend Developer",
-        "period": "Nov 2023 – Nov 2024",
+        "period": "Nov 2023 – Sep 2024",
         "bullets": [
-          "Desarrollo de aplicaciones móviles con React Native Expo.",
-          "Colaboración con diseñadores UX/UI e ingenieros backend para definir soluciones técnicas.",
-          "Contribución a revisiones de código, asegurando altos estándares y buenas prácticas.",
-          "Metodología Scrum para gestión de proyectos."
+          "Desarrollé y publiqué funcionalidades en React Native (Expo) para ClaroPay, una billetera virtual ampliamente utilizada por clientes de Claro en Argentina.",
+          "Aumenté el engagement de usuarios y simplifiqué la navegación in-app implementando push notifications y deep linking.",
+          "Configuré pipelines de CI/CD con GitHub Actions y Jenkins, e introduje quality gates con SonarQube, detectando problemas de código antes del merge.",
+          "Mantuve y corregí bugs en el CMS basado en React.js que gestiona el contenido y la configuración de ClaroPay, permitiendo actualizaciones de contenido sin nuevos releases de la app."
         ],
-        "tags": ["React Native", "Expo", "TypeScript", "Scrum"]
+        "tags": ["React Native", "Expo", "TypeScript", "GitHub Actions", "Jenkins", "SonarQube"]
       },
       {
         "company": "Global Wizards",
         "role": "Frontend Developer",
         "period": "Sep 2022 – Oct 2023",
         "bullets": [
-          "Desarrollo de aplicaciones móviles con React Native para interfaces interactivas optimizadas para dispositivos móviles.",
-          "Integración con Firebase para mejorar la funcionalidad y la seguridad de los usuarios.",
-          "Mantenimiento y resolución de problemas para garantizar rendimiento óptimo y buena experiencia de usuario.",
-          "Colaboración en planificación, revisiones de código y mejoras de arquitectura."
+          "Desarrollé interfaces interactivas y optimizadas para dispositivos móviles en React Native, priorizando una UX fluida y el rendimiento.",
+          "Aseguré la funcionalidad core de la app y los datos de usuarios integrando Firebase para autenticación y almacenamiento de datos.",
+          "Mantuve la app estable a través de mantenimiento proactivo y resolución de problemas, solucionando issues antes de que afectaran a los usuarios.",
+          "Participé en decisiones de arquitectura junto al equipo y sostuve la calidad del código mediante revisiones entre pares."
         ],
         "tags": ["React Native", "Firebase", "JavaScript"]
       },
@@ -80,89 +129,15 @@
         "role": "React Native Developer",
         "period": "Ene 2021 – Sep 2022",
         "bullets": [
-          "Integración de nuevas funcionalidades en la app Regatta Fitness (más de 10.000 descargas) — tanto en el servidor (Node.js) como en el frontend (React Native, React JS).",
-          "Mantenimiento continuo de apps desarrolladas en JavaScript y TypeScript.",
-          "Implementación de redes sociales usando la librería Get Social."
+          "Desarrollé nuevas funcionalidades en frontend (React Native, React.js) y backend (Node.js) para Regatta Fitness, una app fitness que alcanzó más de 10.000 descargas.",
+          "Aumenté el alcance para compartir contenido integrando la librería GetSocial para funcionalidades de redes sociales.",
+          "Mantuve aplicaciones en producción desarrolladas en JavaScript y TypeScript, resolviendo issues para mantenerlas estables para los usuarios finales."
         ],
         "tags": ["React Native", "React JS", "Node.js", "TypeScript"]
-      },
-      {
-        "company": "Martin Produce Inc.",
-        "role": "Mobile App Developer (Freelance)",
-        "period": "Nov 2020",
-        "bullets": [
-          "Desarrollo de una app móvil de e-commerce para Android e iOS para un importante distribuidor de alimentos en EE.UU.",
-          "Implementación fullstack incluyendo API REST y cliente móvil."
-        ],
-        "tags": ["React Native", "Node.js", "Express", "MongoDB"]
-      }
-    ]
-  },
-  "projects": {
-    "label": "Proyectos",
-    "title": "Lo que construí",
-    "view_code": "Ver código",
-    "featured": "Destacado",
-    "work_project": "Proyecto laboral",
-    "anonima_description": "App retail en React Native para la principal cadena de supermercados de Argentina, construida en Globant. Implementación pixel-perfect desde Figma con navegación anidada compleja (Drawer + Tab + Stack), gestión de estado con Redux + GraphQL, validación con Zod e integración del programa de fidelidad.",
-    "items": [
-      {
-        "name": "OKDA — Productora Audiovisual",
-        "description": "Landing page institucional para OKDA, productora audiovisual argentina especializada en comunicación estratégica para empresas y marcas. Incluye secciones de hero animado, propuesta de valor, equipo, servicios, proceso, galería de videos y contacto. Deploy en Vercel con CI/CD automáticos.",
-        "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui", "Framer Motion"],
-        "repo": "https://github.com/toba456/okda-landing",
-        "liveUrl": "https://okda-landing.vercel.app/",
-        "isWorkProject": true,
-        "featured": true
-      },
-      {
-        "name": "Web Instructora de Ski",
-        "description": "Plataforma de gestión de reservas para una instructora de ski, con soporte multiidioma y diseño responsivo. Los clientes pueden ver disponibilidad en un calendario e iniciar reservas; el panel de administración permite al admin confirmar, gestionar y controlar todas las reservas desde un usuario dedicado. Backend en Supabase.",
-        "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase", "i18n"],
-        "repo": "https://github.com/toba456/florencia-ski",
-        "liveUrl": "https://florencia-ski.vercel.app/es",
-        "isWorkProject": true,
-        "featured": true
-      },
-      {
-        "name": "Snap — URL Shortener",
-        "description": "Acortador de URLs fullstack con dashboard de analíticas. Los usuarios crean alias cortos y visualizan estadísticas de clicks (por día, hora pico, tendencias semanales). Incluye autenticación JWT, 70 tests de integración y tests E2E con Playwright.",
-        "tags": ["TypeScript", "Node.js", "Express", "SQLite", "React", "Vitest", "Playwright"],
-        "repo": "https://github.com/toba456/snap-url-shortener",
-        "featured": true
-      },
-      {
-        "name": "Calorie Tracker",
-        "description": "Contador de calorías construido con React y Vite. Usa useReducer para la gestión del estado, TypeScript para el tipado y Tailwind CSS para los estilos.",
-        "tags": ["React", "TypeScript", "Vite", "useReducer", "Tailwind CSS"],
-        "repo": "https://github.com/toba456/calorie-tracker",
-        "featured": false
-      },
-      {
-        "name": "Calculadora de Propinas",
-        "description": "Calculadora web de propinas con cálculo en tiempo real. Construida con React, TypeScript y Tailwind CSS.",
-        "tags": ["React", "TypeScript", "Tailwind CSS"],
-        "repo": "https://github.com/toba456/Calculator_Tip",
-        "featured": false
-      },
-      {
-        "name": "GuitarLA",
-        "description": "Carrito de compras e-commerce para productos de guitarra. Implementa lógica de carrito, listado de productos y estado persistente.",
-        "tags": ["React", "Vite", "CSS"],
-        "repo": "https://github.com/toba456/GuitarLA",
-        "featured": false
-      },
-      {
-        "name": "5Tenedores",
-        "description": "App móvil de descubrimiento de restaurantes construida con React Native y Expo. Integración con Google Maps para encontrar restaurantes cercanos, selector de imágenes, servicios de ubicación, backend en Firebase y validación de formularios con Formik y Yup.",
-        "tags": ["React Native", "Expo", "Firebase", "Google Maps", "Formik"],
-        "repo": "https://github.com/toba456/5Tenedores",
-        "featured": false
       }
     ]
   },
   "skills": {
-    "label": "Skills",
     "title": "Mi stack tecnológico",
     "categories": {
       "frontend": "Frontend",
@@ -172,8 +147,7 @@
     }
   },
   "contact": {
-    "label": "Contacto",
-    "title": "Trabajemos juntos",
+    "title": "Hablemos",
     "subtitle": "Estoy abierto a nuevas oportunidades. Si tenés una pregunta o simplemente querés saludar — mi bandeja de entrada siempre está abierta.",
     "email_btn": "Enviar un email",
     "linkedin_btn": "Perfil de LinkedIn",

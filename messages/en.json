@@ -7,20 +7,81 @@
     "contact": "Contact"
   },
   "hero": {
-    "greeting": "Hi, I'm",
-    "name": "Tobias Marroquin",
-    "title": "Frontend Engineer",
-    "subtitle": "Building pixel-perfect interfaces and high-performance mobile apps with React & React Native.",
-    "cta_contact": "Get in touch",
-    "cta_cv": "Download CV",
-    "available": "Available for new opportunities"
+    "heading": "Hi, I'm Tobias",
+    "tagline": "a frontend engineer driven by building fast, pixel-perfect products",
+    "contact_cta": "Contact Me"
   },
   "about": {
-    "label": "About me",
-    "title": "Passionate about great user experiences",
-    "bio": "I'm a frontend developer with 4 years of experience working with React JS and React Native. I enjoy building apps that are not only functional but also provide a great user experience. Throughout my career, I've been involved in different kinds of projects, from early ideas to fully released products. I'm always looking to improve the way I write code, learn new tools, and care about writing clean, maintainable code.",
-    "ai_title": "AI-augmented development",
-    "ai_bio": "I actively integrate AI tools like Claude Code and Cursor into my daily workflow — from code reviews and architecture decisions to complex debugging sessions. This lets me ship faster without sacrificing quality, and stay ahead in a rapidly evolving industry."
+    "title": "About me",
+    "text": "With 4+ years of experience in React and React Native, I build fast, pixel-perfect products end to end, and I lean on AI tools like Claude Code every day to ship faster without cutting corners. Let's build something great together."
+  },
+  "services": {
+    "title": "Services",
+    "items": [
+      {
+        "name": "Frontend Development",
+        "description": "Building fast, accessible interfaces with React, Next.js and TypeScript, from design handoff to production."
+      },
+      {
+        "name": "Mobile Apps",
+        "description": "Cross-platform apps with React Native and Expo, shipped to the App Store and Google Play."
+      },
+      {
+        "name": "Pixel-Perfect UI",
+        "description": "Turning Figma designs into clean, responsive, production-ready code."
+      },
+      {
+        "name": "AI Integration",
+        "description": "Wiring up Claude and Gemini APIs, and building AI-augmented workflows into everyday development."
+      },
+      {
+        "name": "Architecture & Quality",
+        "description": "Clean code, SOLID principles, and testing practices that keep codebases maintainable as they grow."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "labels": {
+      "client": "Client",
+      "work": "Work",
+      "personal": "Personal",
+      "live": "Live Project",
+      "code": "Code",
+      "more_projects": "More projects"
+    },
+    "items": {
+      "okda": {
+        "name": "OKDA — Audiovisual Production Company",
+        "description": "Institutional landing page for OKDA, an Argentine audiovisual production company specialized in strategic communication for businesses and brands. Animated hero, value proposition, team, services, process, video gallery, and contact sections."
+      },
+      "florencia": {
+        "name": "Ski Instructor Website",
+        "description": "Booking management platform for a ski instructor, with multilanguage support and responsive design. Clients check availability on a calendar and submit requests; the admin panel manages every reservation. Backend powered by Supabase."
+      },
+      "tenedores": {
+        "name": "5Tenedores",
+        "description": "Mobile restaurant discovery app built with React Native and Expo. Users browse restaurants with Google Maps locations, leave reviews and ratings, and check a ranking; auth and data persisted with Firebase."
+      }
+    },
+    "more": {
+      "snap": {
+        "name": "Snap — URL Shortener",
+        "description": "Full-stack URL shortener with an analytics dashboard, JWT auth, 70 integration tests, and Playwright E2E tests."
+      },
+      "calorie_tracker": {
+        "name": "Calorie Tracker",
+        "description": "Calorie counter built with React and Vite, using useReducer for state management."
+      },
+      "tip_calculator": {
+        "name": "Tip Calculator",
+        "description": "Web tip calculator with real-time split calculations."
+      },
+      "guitarla": {
+        "name": "GuitarLA",
+        "description": "E-commerce shopping cart for guitar products with persistent state."
+      }
+    }
   },
   "experience": {
     "label": "Work experience",
@@ -28,50 +89,38 @@
     "present": "Present",
     "jobs": [
       {
-        "company": "AI Innovation Lab / Product Development Cell",
-        "role": "Frontend Engineer",
-        "period": "Feb 2026 – Present",
-        "bullets": [
-          "Sole Frontend Developer in a multidisciplinary AI Pod — collaborated with PMs, UX/UI designers, and backend engineers to build a high-performance MVP from scratch.",
-          "Engineered a modern responsive web architecture using React and Vite, prioritizing speed and seamless UX.",
-          "Integrated advanced Generative AI capabilities leveraging Gemini and Claude APIs to power core product features and automated workflows.",
-          "Translated UI/UX prototypes into functional, maintainable code within an agile, fast-paced cycle."
-        ],
-        "tags": ["React", "Vite", "Claude API", "Gemini API", "TypeScript"]
-      },
-      {
         "company": "Globant",
         "role": "Frontend Developer",
-        "period": "Oct 2024 – Present",
+        "period": "Oct 2024 – Jul 2026",
         "bullets": [
-          "Developed and maintained cross-platform mobile applications using React Native and React JS, following clean architecture principles.",
-          "Built the La Anónima retail app: pixel-perfect React Native UI from Figma designs, Redux + GraphQL state management, Zod schema validation, and complex nested navigation.",
-          "Collaborated with cross-functional teams including designers, backend developers, and QA to deliver high-quality features.",
-          "Implemented SOLID principles and AI-augmented code audits for consistent architecture adherence."
+          "Shipped cross-platform React Native features for La Anónima (major Argentine supermarket chain) and Farmacity (leading Argentine pharmacy chain), applying clean architecture to keep both codebases scalable.",
+          "Drove daily stand-ups, sprint planning, and code reviews with designers, backend engineers, and QA, catching integration issues before release.",
+          "Owned the frontend of an internal AI innovation initiative end-to-end as the sole frontend developer, building a React + Vite MVP and integrating the Gemini and Claude APIs into core product features.",
+          "Coordinated App Store and Google Play submissions alongside the mobile team, preparing builds to avoid release delays."
         ],
-        "tags": ["React Native", "TypeScript", "Redux", "GraphQL", "Expo", "Zod"]
+        "tags": ["React Native", "TypeScript", "React", "Vite", "Gemini API", "Claude API"]
       },
       {
         "company": "GlobalLogic",
         "role": "Frontend Developer",
-        "period": "Nov 2023 – Nov 2024",
+        "period": "Nov 2023 – Sep 2024",
         "bullets": [
-          "Mobile application development with React Native Expo.",
-          "Collaboration with UX/UI designers and backend engineers to define technical solutions.",
-          "Contribution to code reviews, ensuring high coding standards and best practices.",
-          "Working with Scrum methodology for project management."
+          "Built and shipped features in React Native (Expo) for ClaroPay, a widely used virtual wallet app for Claro customers in Argentina.",
+          "Increased user engagement and streamlined in-app navigation by implementing push notifications and deep linking.",
+          "Set up GitHub Actions and Jenkins CI/CD pipelines and introduced SonarQube quality gates, catching code issues before merge.",
+          "Maintained and fixed bugs in the React.js-based CMS powering ClaroPay's content and configuration, enabling content updates without new app releases."
         ],
-        "tags": ["React Native", "Expo", "TypeScript", "Scrum"]
+        "tags": ["React Native", "Expo", "TypeScript", "GitHub Actions", "Jenkins", "SonarQube"]
       },
       {
         "company": "Global Wizards",
         "role": "Frontend Developer",
         "period": "Sep 2022 – Oct 2023",
         "bullets": [
-          "Mobile application development with React Native for interactive interfaces optimized for mobile devices.",
-          "Integration with Firebase to improve app functionality and ensure user security.",
-          "Maintenance and troubleshooting to ensure optimal performance and smooth UX.",
-          "Team collaboration for planning, code reviews, and architecture improvements."
+          "Built interactive, mobile-optimized interfaces in React Native, prioritizing smooth UX and performance.",
+          "Secured core app functionality and user data by integrating Firebase for authentication and data storage.",
+          "Kept the app stable through proactive maintenance and troubleshooting, resolving issues before they affected users.",
+          "Shaped architecture decisions with the team and upheld code quality through peer reviews."
         ],
         "tags": ["React Native", "Firebase", "JavaScript"]
       },
@@ -80,89 +129,15 @@
         "role": "React Native Developer",
         "period": "Jan 2021 – Sep 2022",
         "bullets": [
-          "Integrated new functionalities into the Regatta Fitness app (10k+ downloads) — both server side (Node.js) and frontend (React Native, React JS).",
-          "Provided ongoing maintenance for apps built in JavaScript and TypeScript.",
-          "Implemented social media features using the Get Social library."
+          "Built new features across frontend (React Native, React.js) and backend (Node.js) for Regatta Fitness, a fitness app that reached 10,000+ downloads.",
+          "Increased content sharing by integrating the GetSocial library for social media sharing functionality.",
+          "Maintained production apps built with JavaScript and TypeScript, resolving issues to keep them stable for end users."
         ],
         "tags": ["React Native", "React JS", "Node.js", "TypeScript"]
-      },
-      {
-        "company": "Martin Produce Inc.",
-        "role": "Mobile App Developer (Freelance)",
-        "period": "Nov 2020",
-        "bullets": [
-          "Developed a mobile e-commerce app for Android and iOS for a major US food distributor.",
-          "Full-stack implementation including REST API and mobile client."
-        ],
-        "tags": ["React Native", "Node.js", "Express", "MongoDB"]
-      }
-    ]
-  },
-  "projects": {
-    "label": "Projects",
-    "title": "Things I've built",
-    "view_code": "View code",
-    "featured": "Featured",
-    "work_project": "Work project",
-    "anonima_description": "React Native retail app for Argentina's major supermarket chain, built at Globant. Pixel-perfect Figma-to-code implementation with complex nested navigation (Drawer + Tab + Stack), Redux + GraphQL state management, Zod schema validation, and a loyalty program integration.",
-    "items": [
-      {
-        "name": "OKDA — Audiovisual Production Company",
-        "description": "Institutional landing page for OKDA, an Argentine audiovisual production company specialized in strategic communication for businesses and brands. Features an animated hero, value proposition, team, services, process, video gallery, and contact sections. Deployed on Vercel with automatic CI/CD.",
-        "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui", "Framer Motion"],
-        "repo": "https://github.com/toba456/okda-landing",
-        "liveUrl": "https://okda-landing.vercel.app/",
-        "isWorkProject": true,
-        "featured": true
-      },
-      {
-        "name": "Ski Instructor Website",
-        "description": "Booking management platform for a ski instructor, with multilanguage support and responsive design. Clients can check availability on a calendar and submit booking requests; the admin panel lets the instructor confirm, manage, and track all reservations through a dedicated user. Backend powered by Supabase.",
-        "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase", "i18n"],
-        "repo": "https://github.com/toba456/florencia-ski",
-        "liveUrl": "https://florencia-ski.vercel.app/es",
-        "isWorkProject": true,
-        "featured": true
-      },
-      {
-        "name": "Snap — URL Shortener",
-        "description": "Full-stack URL shortener with analytics dashboard. Users create short aliases and track click statistics (clicks per day, peak hours, weekly trends). Features JWT auth, 70 integration tests, and Playwright E2E tests.",
-        "tags": ["TypeScript", "Node.js", "Express", "SQLite", "React", "Vitest", "Playwright"],
-        "repo": "https://github.com/toba456/snap-url-shortener",
-        "featured": true
-      },
-      {
-        "name": "Calorie Tracker",
-        "description": "Calorie counter built with React and Vite. Uses useReducer for state management, TypeScript for type safety, and Tailwind CSS for styling.",
-        "tags": ["React", "TypeScript", "Vite", "useReducer", "Tailwind CSS"],
-        "repo": "https://github.com/toba456/calorie-tracker",
-        "featured": false
-      },
-      {
-        "name": "Tip Calculator",
-        "description": "Web tip calculator with real-time split calculations. Built with React, TypeScript, and Tailwind CSS.",
-        "tags": ["React", "TypeScript", "Tailwind CSS"],
-        "repo": "https://github.com/toba456/Calculator_Tip",
-        "featured": false
-      },
-      {
-        "name": "GuitarLA",
-        "description": "E-commerce shopping cart for guitar products. Implements cart logic, product listing, and persistent state.",
-        "tags": ["React", "Vite", "CSS"],
-        "repo": "https://github.com/toba456/GuitarLA",
-        "featured": false
-      },
-      {
-        "name": "5Tenedores",
-        "description": "Mobile restaurant discovery app built with React Native and Expo. Features Google Maps integration for finding nearby restaurants, image picker for user photos, location services, Firebase backend, and form validation with Formik and Yup.",
-        "tags": ["React Native", "Expo", "Firebase", "Google Maps", "Formik"],
-        "repo": "https://github.com/toba456/5Tenedores",
-        "featured": false
       }
     ]
   },
   "skills": {
-    "label": "Skills",
     "title": "My tech stack",
     "categories": {
       "frontend": "Frontend",
@@ -172,8 +147,7 @@
     }
   },
   "contact": {
-    "label": "Contact",
-    "title": "Let's work together",
+    "title": "Let's talk",
     "subtitle": "I'm open to new opportunities. Whether you have a question or just want to say hi — my inbox is always open.",
     "email_btn": "Send an email",
     "linkedin_btn": "LinkedIn profile",

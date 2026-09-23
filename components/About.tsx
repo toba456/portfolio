@@ -1,62 +1,74 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
+import FadeIn from "@/components/ui/FadeIn";
+import AnimatedText from "@/components/ui/AnimatedText";
+import { ContactButton } from "@/components/ui/Buttons";
 
 export default function About() {
   const t = useTranslations("about");
+  const tHero = useTranslations("hero");
 
   return (
-    <section id="about" className="py-32 px-6">
-      <div className="max-w-4xl mx-auto">
-        <motion.p
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-sm font-semibold text-[#f97316] uppercase tracking-widest mb-4"
-        >
-          {t("label")}
-        </motion.p>
+    <section
+      id="about"
+      className="relative flex min-h-screen flex-col items-center justify-center gap-10 px-5 py-20 sm:gap-14 sm:px-8 md:gap-16 md:px-10"
+    >
+      <FadeIn
+        delay={0.1}
+        x={-80}
+        y={0}
+        duration={0.9}
+        className="absolute left-[1%] top-[4%] w-[120px] sm:left-[2%] sm:w-[160px] md:left-[4%] md:w-[210px]"
+      >
+        <Image src="/decor/moon.png" alt="" width={210} height={210} className="w-full" />
+      </FadeIn>
+      <FadeIn
+        delay={0.25}
+        x={-80}
+        y={0}
+        duration={0.9}
+        className="absolute bottom-[8%] left-[3%] w-[100px] sm:left-[6%] sm:w-[140px] md:left-[10%] md:w-[180px]"
+      >
+        <Image src="/decor/object.png" alt="" width={180} height={180} className="w-full" />
+      </FadeIn>
+      <FadeIn
+        delay={0.15}
+        x={80}
+        y={0}
+        duration={0.9}
+        className="absolute right-[1%] top-[4%] w-[120px] sm:right-[2%] sm:w-[160px] md:right-[4%] md:w-[210px]"
+      >
+        <Image src="/decor/lego.png" alt="" width={210} height={210} className="w-full" />
+      </FadeIn>
+      <FadeIn
+        delay={0.3}
+        x={80}
+        y={0}
+        duration={0.9}
+        className="absolute bottom-[8%] right-[3%] w-[130px] sm:right-[6%] sm:w-[170px] md:right-[10%] md:w-[220px]"
+      >
+        <Image src="/decor/group.png" alt="" width={220} height={220} className="w-full" />
+      </FadeIn>
 
-        <motion.h2
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-3xl md:text-4xl font-bold text-white mb-12"
+      <FadeIn as="h2" y={40} className="relative z-10 text-center">
+        <span
+          className="hero-heading block font-black uppercase leading-none tracking-tight"
+          style={{ fontSize: "clamp(3rem, 12vw, 160px)" }}
         >
           {t("title")}
-        </motion.h2>
+        </span>
+      </FadeIn>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0 }}
-            transition={{ duration: 0.5, delay: 0.15 }}
-            className="p-6 rounded-2xl border border-white/[0.08] bg-white/[0.03] backdrop-blur-sm"
-          >
-            <p className="text-neutral-300 leading-relaxed">{t("bio")}</p>
-          </motion.div>
+      <AnimatedText
+        text={t("text")}
+        className="relative z-10 max-w-[560px] text-center font-medium leading-relaxed text-mist"
+        style={{ fontSize: "clamp(1rem, 2vw, 1.35rem)" }}
+      />
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0 }}
-            transition={{ duration: 0.5, delay: 0.25 }}
-            className="p-6 rounded-2xl border border-[#f97316]/20 bg-[#f97316]/[0.05] backdrop-blur-sm relative overflow-hidden"
-          >
-            <div className="absolute top-0 right-0 w-32 h-32 bg-[#f97316]/10 rounded-full blur-2xl pointer-events-none" />
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-[#f97316]/20 flex items-center justify-center text-lg">
-                🤖
-              </div>
-              <h3 className="font-semibold text-white">{t("ai_title")}</h3>
-            </div>
-            <p className="text-neutral-300 leading-relaxed relative z-10">{t("ai_bio")}</p>
-          </motion.div>
-        </div>
+      <div className="relative z-10">
+        <ContactButton>{tHero("contact_cta")}</ContactButton>
       </div>
     </section>
   );

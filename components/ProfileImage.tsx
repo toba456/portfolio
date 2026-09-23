@@ -16,10 +16,11 @@ export default function ProfileImage() {
 
   return (
     <Image
-      src="/profile.jpg"
+      src="/avatar.webp"
       alt="Tobias Marroquin"
       fill
-      className="object-cover"
+      className="object-contain"
+      sizes="(min-width: 1024px) 820px, 58vw"
       priority
       onError={() => setError(true)}
     />
