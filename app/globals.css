@@ -1,31 +1,32 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-sans: var(--font-inter);
-  --color-orange-accent: #f97316;
-  --color-orange-muted: #fb923c;
-  --color-orange-glow: rgba(249, 115, 22, 0.15);
-  --color-surface: rgba(255, 255, 255, 0.04);
-  --color-surface-hover: rgba(255, 255, 255, 0.07);
-  --color-border: rgba(255, 255, 255, 0.08);
-}
-
-* {
-  box-sizing: border-box;
+  --font-sans: var(--font-kanit), sans-serif;
+  --color-ink: #0c0c0c;
+  --color-mist: #d7e2ea;
+  --color-paper: #ffffff;
 }
 
 html {
   scroll-behavior: smooth;
+  background-color: #0c0c0c;
 }
 
 body {
-  background-color: #0a0a0a;
-  color: #e5e5e5;
-  font-family: var(--font-inter), system-ui, sans-serif;
+  background-color: #0c0c0c;
+  color: #d7e2ea;
+  font-family: var(--font-kanit), sans-serif;
+}
+
+.hero-heading {
+  background: linear-gradient(180deg, #646973 0%, #bbccd7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 ::selection {
-  background-color: rgba(249, 115, 22, 0.3);
+  background-color: rgba(215, 226, 234, 0.25);
   color: #fff;
 }
 
@@ -34,10 +35,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: #0c0c0c;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(249, 115, 22, 0.4);
+  background: rgba(215, 226, 234, 0.3);
   border-radius: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
