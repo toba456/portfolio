@@ -4,7 +4,9 @@
     "experience": "Experiencia",
     "projects": "Proyectos",
     "skills": "Skills",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "open_menu": "Abrir menú",
+    "close_menu": "Cerrar menú"
   },
   "hero": {
     "heading": "Hola, soy Tobias",

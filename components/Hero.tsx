@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import ProfileImage from "@/components/ProfileImage";
 import FadeIn from "@/components/ui/FadeIn";
 import FitText from "@/components/ui/FitText";
@@ -14,6 +15,7 @@ export default function Hero() {
   const t = useTranslations("hero");
   const tNav = useTranslations("nav");
   const [activeSection, setActiveSection] = useState<string>("");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const observers: IntersectionObserver[] = [];
@@ -42,20 +44,69 @@ export default function Hero() {
         as="nav"
         y={-20}
         immediate
-        className="relative z-20 flex flex-wrap items-center justify-between gap-x-4 gap-y-2 px-6 pt-6 md:px-10 md:pt-8"
+        className="relative z-30 flex flex-wrap items-center justify-between gap-x-4 gap-y-2 px-6 pt-6 md:px-10 md:pt-8"
       >
-        {navLinks.map((key) => (
-          <a
-            key={key}
-            href={`#${key}`}
-            className={`text-sm font-medium uppercase tracking-wider transition-opacity duration-200 hover:opacity-70 md:text-lg lg:text-[1.4rem] ${
-              activeSection === key ? "text-white" : "text-mist"
+        <div className="hidden flex-wrap items-center gap-x-4 gap-y-2 md:flex">
+          {navLinks.map((key) => (
+            <a
+              key={key}
+              href={`#${key}`}
+              className={`text-sm font-medium uppercase tracking-wider transition-opacity duration-200 hover:opacity-70 md:text-lg lg:text-[1.4rem] ${
+                activeSection === key ? "text-white" : "text-mist"
+              }`}
+            >
+              {tNav(key)}
+            </a>
+          ))}
+        </div>
+
+        <button
+          type="button"
+          onClick={() => setMenuOpen((open) => !open)}
+          aria-expanded={menuOpen}
+          aria-label={menuOpen ? tNav("close_menu") : tNav("open_menu")}
+          className="relative z-30 flex h-9 w-9 flex-col items-center justify-center gap-1.5 md:hidden"
+        >
+          <span
+            className={`h-0.5 w-6 bg-white transition-transform duration-200 ${
+              menuOpen ? "translate-y-2 rotate-45" : ""
             }`}
-          >
-            {tNav(key)}
-          </a>
-        ))}
+          />
+          <span
+            className={`h-0.5 w-6 bg-white transition-opacity duration-200 ${menuOpen ? "opacity-0" : ""}`}
+          />
+          <span
+            className={`h-0.5 w-6 bg-white transition-transform duration-200 ${
+              menuOpen ? "-translate-y-2 -rotate-45" : ""
+            }`}
+          />
+        </button>
       </FadeIn>
+
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -12 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -12 }}
+            transition={{ duration: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
+            className="absolute inset-x-0 top-0 z-20 flex flex-col gap-1 bg-ink px-6 pb-8 pt-24 md:hidden"
+          >
+            {navLinks.map((key) => (
+              <a
+                key={key}
+                href={`#${key}`}
+                onClick={() => setMenuOpen(false)}
+                className={`py-2.5 text-2xl font-medium uppercase tracking-wider transition-opacity duration-200 hover:opacity-70 ${
+                  activeSection === key ? "text-white" : "text-mist"
+                }`}
+              >
+                {tNav(key)}
+              </a>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <div className="relative flex min-h-0 flex-1 flex-col justify-center">
         <FadeIn delay={0.15} y={40} immediate>
@@ -69,7 +120,7 @@ export default function Hero() {
           </FitText>
         </FadeIn>
 
-        <div className="relative z-10 mx-auto -mt-[8vh] sm:-mt-[clamp(0px,calc(300px-30vh),200px)] md:-mt-[clamp(0px,calc(429px-40vh),250px)]">
+        <div className="relative z-10 mx-auto -mt-[1vh] sm:-mt-[clamp(0px,calc(300px-30vh),200px)] md:-mt-[clamp(0px,calc(429px-40vh),250px)]">
           <Magnet padding={150} strength={3}>
             <FadeIn delay={0.6} y={30} immediate>
               <div
