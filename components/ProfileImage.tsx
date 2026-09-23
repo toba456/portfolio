@@ -20,7 +20,7 @@ export default function ProfileImage() {
       alt="Tobias Marroquin"
       fill
       className="object-contain"
-      sizes="(min-width: 1024px) 640px, 46vw"
+      sizes="(min-width: 1024px) 820px, 58vw"
       priority
       onError={() => setError(true)}
     />

@@ -3,17 +3,18 @@
 import Image from "next/image";
 import { useRef } from "react";
 import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
-import { marqueeRow1, marqueeRow2 } from "@/lib/content";
+import { marqueeRow1, marqueeRow2, type ProjectImage } from "@/lib/content";
 
-function Tile({ src, eager }: { src: string; eager?: boolean }) {
+function Tile({ image, eager }: { image: ProjectImage; eager?: boolean }) {
   return (
-    <div className="relative h-[180px] w-[280px] flex-shrink-0 overflow-hidden rounded-2xl sm:h-[230px] sm:w-[360px] md:h-[270px] md:w-[420px]">
+    <div className="h-[180px] flex-shrink-0 overflow-hidden rounded-2xl sm:h-[230px] md:h-[270px]">
       <Image
-        src={src}
+        src={image.src}
         alt=""
-        fill
-        className="object-cover"
-        sizes="420px"
+        width={image.width}
+        height={image.height}
+        className="h-full w-auto object-contain"
+        sizes="900px"
         loading={eager ? undefined : "lazy"}
         priority={eager}
       />
@@ -26,7 +27,7 @@ function Row({
   direction,
   eagerCount = 0,
 }: {
-  images: string[];
+  images: ProjectImage[];
   direction: "left" | "right";
   eagerCount?: number;
 }) {
@@ -51,8 +52,8 @@ function Row({
           willChange: "transform",
         }}
       >
-        {tripled.map((src, i) => (
-          <Tile key={i} src={src} eager={i < eagerCount} />
+        {tripled.map((image, i) => (
+          <Tile key={i} image={image} eager={i < eagerCount} />
         ))}
       </motion.div>
     </div>

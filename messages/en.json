@@ -58,6 +58,10 @@
       "florencia": {
         "name": "Ski Instructor Website",
         "description": "Booking management platform for a ski instructor, with multilanguage support and responsive design. Clients check availability on a calendar and submit requests; the admin panel manages every reservation. Backend powered by Supabase."
+      },
+      "tenedores": {
+        "name": "5Tenedores",
+        "description": "Mobile restaurant discovery app built with React Native and Expo. Users browse restaurants with Google Maps locations, leave reviews and ratings, and check a ranking; auth and data persisted with Firebase."
       }
     },
     "more": {
@@ -76,10 +80,6 @@
       "guitarla": {
         "name": "GuitarLA",
         "description": "E-commerce shopping cart for guitar products with persistent state."
-      },
-      "tenedores": {
-        "name": "5Tenedores",
-        "description": "Mobile restaurant discovery app with Google Maps and Firebase."
       }
     }
   },

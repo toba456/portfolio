@@ -1,12 +1,15 @@
 // TODO: replace with the real production domain once it's live.
 export const SITE_URL = "https://tobiasmarroquin.dev";
 
+export type ProjectImage = { src: string; width: number; height: number };
+
 export type StackedProject = {
   id: string;
   kind: "client" | "work" | "personal";
   liveUrl?: string;
   repo?: string;
-  images: [string, string, string];
+  images: [ProjectImage, ProjectImage, ProjectImage];
+  imageLayout?: "web" | "mobile";
 };
 
 export const stackedProjects: StackedProject[] = [
@@ -14,7 +17,11 @@ export const stackedProjects: StackedProject[] = [
     id: "okda",
     kind: "client",
     liveUrl: "https://okda-landing.vercel.app/",
-    images: ["/projects/okda-1.jpg", "/projects/okda-2.jpg", "/projects/okda-3.jpg"],
+    images: [
+      { src: "/projects/okda-1.jpg", width: 1100, height: 523 },
+      { src: "/projects/okda-2.jpg", width: 1100, height: 517 },
+      { src: "/projects/okda-3.jpg", width: 1100, height: 543 },
+    ],
   },
   {
     id: "florencia",
@@ -22,10 +29,21 @@ export const stackedProjects: StackedProject[] = [
     liveUrl: "https://florencia-ski.vercel.app/es",
     repo: "https://github.com/toba456/florencia-ski",
     images: [
-      "/projects/florencia-1.jpg",
-      "/projects/florencia-2.jpg",
-      "/projects/florencia-3.jpg",
+      { src: "/projects/florencia-1.jpg", width: 1100, height: 512 },
+      { src: "/projects/florencia-2.jpg", width: 1100, height: 544 },
+      { src: "/projects/florencia-3.jpg", width: 1100, height: 546 },
     ],
+  },
+  {
+    id: "tenedores",
+    kind: "personal",
+    repo: "https://github.com/toba456/5Tenedores",
+    images: [
+      { src: "/projects/tenedores-1.jpg", width: 700, height: 1365 },
+      { src: "/projects/tenedores-2.jpg", width: 700, height: 1365 },
+      { src: "/projects/tenedores-3.jpg", width: 700, height: 1365 },
+    ],
+    imageLayout: "mobile",
   },
 ];
 
@@ -57,24 +75,19 @@ export const moreProjects: MoreProject[] = [
     repo: "https://github.com/toba456/GuitarLA",
     tags: ["React", "Vite", "CSS"],
   },
-  {
-    id: "tenedores",
-    repo: "https://github.com/toba456/5Tenedores",
-    tags: ["React Native", "Expo", "Firebase"],
-  },
 ];
 
-export const marqueeImages = [
-  "/marquee/m1.jpg",
-  "/marquee/m2.jpg",
-  "/marquee/m3.jpg",
-  "/marquee/m4.jpg",
-  "/marquee/m5.jpg",
-  "/marquee/m6.jpg",
-  "/marquee/m7.jpg",
-  "/marquee/m8.jpg",
-  "/marquee/m9.jpg",
-  "/marquee/m10.jpg",
+export const marqueeImages: ProjectImage[] = [
+  { src: "/marquee/m1.jpg", width: 1100, height: 347 },
+  { src: "/marquee/m2.jpg", width: 1100, height: 348 },
+  { src: "/marquee/m3.jpg", width: 1100, height: 584 },
+  { src: "/marquee/m4.jpg", width: 1100, height: 560 },
+  { src: "/marquee/m5.jpg", width: 1100, height: 561 },
+  { src: "/marquee/m6.jpg", width: 1100, height: 652 },
+  { src: "/marquee/m7.jpg", width: 1100, height: 614 },
+  { src: "/marquee/m8.jpg", width: 1100, height: 842 },
+  { src: "/marquee/m9.jpg", width: 767, height: 1025 },
+  { src: "/marquee/m10.jpg", width: 875, height: 1100 },
 ];
 
 export const marqueeRow1 = marqueeImages.slice(0, 5);

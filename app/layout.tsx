@@ -31,8 +31,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/avatar.webp",
-        width: 1968,
-        height: 1968,
+        width: 1185,
+        height: 1692,
         alt: "Tobias Marroquin",
       },
     ],

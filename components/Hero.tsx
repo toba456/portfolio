@@ -37,7 +37,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="hero" className="relative flex min-h-screen flex-col overflow-x-clip">
+    <section id="hero" className="relative flex h-screen flex-col overflow-x-clip">
       <FadeIn
         as="nav"
         y={-20}
@@ -57,11 +57,11 @@ export default function Hero() {
         ))}
       </FadeIn>
 
-      <div className="relative flex flex-1 flex-col justify-center">
+      <div className="relative flex min-h-0 flex-1 flex-col justify-center">
         <FadeIn delay={0.15} y={40} immediate>
           <FitText
             as="h1"
-            maxFontSize={280}
+            maxFontSize={170}
             minFontSize={32}
             className="hero-heading font-black uppercase leading-none tracking-tight"
           >
@@ -69,14 +69,14 @@ export default function Hero() {
           </FitText>
         </FadeIn>
 
-        <div className="relative z-10 mx-auto -mt-[9vh] sm:-mt-[11vh] md:-mt-[14vh]">
+        <div className="relative z-10 mx-auto -mt-[8vh] sm:-mt-[clamp(0px,calc(300px-30vh),200px)] md:-mt-[clamp(0px,calc(429px-40vh),250px)]">
           <Magnet padding={150} strength={3}>
             <FadeIn delay={0.6} y={30} immediate>
               <div
                 className="relative"
                 style={{
-                  width: "clamp(240px, 46vw, 640px)",
-                  aspectRatio: "1 / 1",
+                  height: "clamp(260px, min(70vw, 60vh), 760px)",
+                  aspectRatio: "1185 / 1692",
                 }}
               >
                 <ProfileImage />

@@ -58,6 +58,10 @@
       "florencia": {
         "name": "Web Instructora de Ski",
         "description": "Plataforma de gestión de reservas para una instructora de ski, con soporte multiidioma y diseño responsivo. Los clientes ven disponibilidad en un calendario y envían solicitudes; el panel de admin gestiona todas las reservas. Backend en Supabase."
+      },
+      "tenedores": {
+        "name": "5Tenedores",
+        "description": "App móvil de descubrimiento de restaurantes construida con React Native y Expo. Los usuarios exploran restaurantes con ubicación en Google Maps, dejan reseñas y calificaciones, y consultan un ranking; autenticación y datos persistidos en Firebase."
       }
     },
     "more": {
@@ -76,10 +80,6 @@
       "guitarla": {
         "name": "GuitarLA",
         "description": "Carrito de compras e-commerce para productos de guitarra con estado persistente."
-      },
-      "tenedores": {
-        "name": "5Tenedores",
-        "description": "App móvil de descubrimiento de restaurantes con Google Maps y Firebase."
       }
     }
   },

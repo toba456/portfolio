@@ -77,25 +77,53 @@ function ProjectCard({
           {t(`items.${project.id}.description`)}
         </p>
 
-        <div className="flex gap-3">
-          <div className="flex w-[40%] flex-col gap-3">
+        {project.imageLayout === "mobile" ? (
+          <div className="grid grid-cols-3 gap-3">
+            {project.images.map((img, i) => (
+              <div
+                key={img.src}
+                className="relative w-full overflow-hidden rounded-[24px] sm:rounded-[32px] md:rounded-[40px]"
+                style={{ aspectRatio: `${img.width} / ${img.height}` }}
+              >
+                <Image
+                  src={img.src}
+                  alt=""
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 768px) 20vw, 33vw"
+                  priority={i === 0}
+                />
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="flex flex-col gap-3">
             <div
               className="relative w-full overflow-hidden rounded-[40px] sm:rounded-[50px] md:rounded-[60px]"
-              style={{ height: "clamp(130px, 16vw, 230px)" }}
+              style={{ aspectRatio: `${project.images[0].width} / ${project.images[0].height}` }}
             >
-              <Image src={project.images[0]} alt="" fill className="object-cover" sizes="40vw" />
+              <Image
+                src={project.images[0].src}
+                alt=""
+                fill
+                className="object-cover"
+                sizes="(min-width: 768px) 56rem, 100vw"
+                priority
+              />
             </div>
-            <div
-              className="relative w-full overflow-hidden rounded-[40px] sm:rounded-[50px] md:rounded-[60px]"
-              style={{ height: "clamp(160px, 22vw, 340px)" }}
-            >
-              <Image src={project.images[1]} alt="" fill className="object-cover" sizes="40vw" />
+            <div className="flex gap-3">
+              {[project.images[1], project.images[2]].map((img) => (
+                <div
+                  key={img.src}
+                  className="relative w-1/2 overflow-hidden rounded-[32px] sm:rounded-[40px] md:rounded-[50px]"
+                  style={{ aspectRatio: `${img.width} / ${img.height}` }}
+                >
+                  <Image src={img.src} alt="" fill className="object-cover" sizes="(min-width: 768px) 28rem, 50vw" />
+                </div>
+              ))}
             </div>
           </div>
-          <div className="relative w-[60%] overflow-hidden rounded-[40px] sm:rounded-[50px] md:rounded-[60px]">
-            <Image src={project.images[2]} alt="" fill className="object-cover" sizes="60vw" />
-          </div>
-        </div>
+        )}
       </motion.div>
     </div>
   );
