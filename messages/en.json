@@ -53,6 +53,10 @@
       "more_projects": "More projects"
     },
     "items": {
+      "anonima": {
+        "name": "La Anónima App — Mobile Retail",
+        "description": "Official mobile app for La Anónima, one of Argentina's leading supermarket chains, built in collaboration with Globant. Translated complex retail requirements into a pixel-perfect experience: the Plus loyalty program, coupon system, product catalogs, price scanner, and online store. Secure authentication flows with encrypted token storage and AI-augmented design audits to ensure 1:1 fidelity with Figma."
+      },
       "okda": {
         "name": "OKDA — Audiovisual Production Company",
         "description": "Institutional landing page for OKDA, an Argentine audiovisual production company specialized in strategic communication for businesses and brands. Animated hero, value proposition, team, services, process, video gallery, and contact sections."

@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import { motion, useScroll, useTransform } from "framer-motion";
 import FadeIn from "@/components/ui/FadeIn";
 import { GhostButton } from "@/components/ui/Buttons";
-import { stackedProjects, moreProjects, type StackedProject } from "@/lib/content";
+import { stackedProjects, type StackedProject } from "@/lib/content";
 
 function GitHubIcon() {
   return (
@@ -152,38 +152,6 @@ export default function Projects() {
           <ProjectCard key={project.id} project={project} index={i} total={stackedProjects.length} />
         ))}
       </div>
-
-      <FadeIn y={20} className="mx-auto mt-24 max-w-4xl">
-        <h3 className="mb-6 text-sm font-semibold uppercase tracking-widest text-mist/60">
-          {t("labels.more_projects")}
-        </h3>
-        <div className="flex flex-col divide-y divide-mist/10 border-y border-mist/10">
-          {moreProjects.map((project) => (
-            <a
-              key={project.id}
-              href={project.repo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex flex-col gap-2 py-5 transition-colors hover:text-white sm:flex-row sm:items-center sm:justify-between"
-            >
-              <div>
-                <p className="font-medium">{t(`more.${project.id}.name`)}</p>
-                <p className="text-sm text-mist/60">{t(`more.${project.id}.description`)}</p>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-full border border-mist/20 px-2.5 py-1 text-xs text-mist/60"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </a>
-          ))}
-        </div>
-      </FadeIn>
     </section>
   );
 }
