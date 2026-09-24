@@ -15,7 +15,7 @@
   },
   "about": {
     "title": "About me",
-    "text": "With 4+ years of experience in React and React Native, I build fast, pixel-perfect products end to end, and I lean on AI tools like Claude Code every day to ship faster without cutting corners. Let's build something great together."
+    "text": "With 4+ years building mobile and web products end to end with React and React Native, I've worked in agile teams alongside design, backend, and QA on projects like ClaroPay, La Anónima, and Farmacity. I also led an internal AI initiative as the sole frontend developer, integrating the Claude and Gemini APIs. I'm obsessed with pixel-perfect fidelity and clean code that scales."
   },
   "services": {
     "title": "Services",
