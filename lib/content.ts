@@ -45,6 +45,15 @@ export const stackedProjects: StackedProject[] = [
     ],
     imageLayout: "mobile",
   },
+  {
+    id: "anonima",
+    kind: "work",
+    images: [
+      { src: "/projects/anonima-1.webp", width: 1176, height: 672 },
+      { src: "/projects/anonima-2.png", width: 1196, height: 668 },
+      { src: "/projects/anonima-3.png", width: 1198, height: 670 },
+    ],
+  },
 ];
 
 export type MoreProject = {
