@@ -17,7 +17,6 @@ export default async function Home() {
     <NextIntlClientProvider locale={locale} messages={messages}>
       <main className="overflow-x-clip">
         <Hero />
-        <Marquee />
         <About />
         <Services />
         <Projects />
