@@ -94,8 +94,8 @@ export const marqueeRow1 = marqueeImages.slice(0, 5);
 export const marqueeRow2 = marqueeImages.slice(5);
 
 export const skillCategories = {
-  frontend: ["React JS", "TypeScript", "Next.js", "Tailwind CSS", "HTML & CSS", "Vite"],
-  mobile: ["React Native", "Expo", "React Navigation", "Redux", "GraphQL"],
+  frontend: ["React JS", "TypeScript", "Next.js", "Tailwind CSS", "HTML & CSS", "Vite", "GraphQL", 'API Rest', 'React Query', 'Zustand', "Redux", 'React Testing Library', 'Jest'],
+  mobile: ["React Native", "Expo", "React Navigation"],
   backend: ["Node.js", "Express.js", "Firebase", "MongoDB", "SQLite", "REST APIs"],
   ai: ["Claude Code", "Claude API", "Gemini API", "Cursor", "AI-augmented workflows"],
 } as const;
